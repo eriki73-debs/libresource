@@ -1,0 +1,25 @@
+Source: libresource
+Section: misc
+Priority: optional
+Maintainer: Erik Inkinen <erik.inkinen@gmail.com>
+Build-Depends: libdbus-1-dev,
+ debhelper (>= 4.1.0),
+ libglib2.0-dev,
+ check,
+ libtool,
+ autoconf,
+ automake,
+Standards-Version: 3.7.2
+
+Package: libresource
+Section: misc
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Resource management for MeeGo. Resource policy client library.
+
+Package: libresource-dev
+Section: devel
+Priority: extra
+Architecture: any
+Depends: libresource (= ${binary:Version})
+Description: Resource management for MeeGo. Resource policy client library.

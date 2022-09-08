@@ -7,4 +7,4 @@ fmradio_CFLAGS += -D__DEBUG__
 endif
 fmradio_LDADD = $(top_builddir)/src/libresource-glib.la \
                 $(top_builddir)/src/libresource.la \
-                $(DBUS_LIBS)
+                $(DBUS_LIBS) $(GLIB_LIBS)
